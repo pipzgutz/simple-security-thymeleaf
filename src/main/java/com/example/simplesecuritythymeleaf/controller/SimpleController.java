@@ -23,6 +23,16 @@ public class SimpleController {
         return "login";
     }
 
+    @GetMapping("/admin")
+    public String admin() {
+        return "admin/index";
+    }
+
+    @GetMapping("/user")
+    public String user() {
+        return "user/user";
+    }
+
     @GetMapping("/403")
     public String accessDenied() {
         return "403";
