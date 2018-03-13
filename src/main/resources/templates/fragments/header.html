@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+</head>
+<body>
+<th:block th:fragment="headercss">
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</th:block>
+
+<div th:fragment="header">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a th:href="@{/}" class="navbar-brand">Simple Security</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <div class="nav navbar-nav">
+                <li class="active">
+                    <a th:href="@{/}">Home</a>
+                </li>
+                <li>
+                    <a th:href="@{/logout}">Logout</a>
+                </li>
+            </div>
+        </div>
+    </nav>
+</div>
+</body>
+</html>
